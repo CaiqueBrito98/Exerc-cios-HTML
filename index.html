@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro Site</title>
-    <h1> Informações Pessoais </h1>
-
     
 </head>
 <body>
     <ul>    
-        <li>Nome: Caique Brito</li>
-        <li> idade:26</li>
-        <li>Estado civil: Solteiro</li>
+        <li>Nome: <span id="nome"></span></li>
+        <li>Estado civil: <span id="estadoCivil"></span></li>
+        <li>Idade: <span id="idade"></span></li>
+        <li>Descrição: <span id="descricao"></span></li>
+    
     </ul>
     <img src="img/Caique..jpg" alt="minha foto">
 </body>
@@ -27,5 +27,26 @@
     }
     
 </style>
+<script>
+
+// definindo variaveis
+    var Nome = CaiqueBrito
+    var estadocivil = solteiro
+    var Idade = 26 
+    var descrição;
+//Definindo idade
+if (idade <18) {
+    descrição= 'maior de idade';
+}
+else{
+    descrição= 'menor de idade';
+}
+// Scripts
+document.getElementById('nome').innerHTML= Nome;
+document.getElementById('estado civil').innerHTML= estadocivil;
+document.getElementById('idade').innerHTML= 26;
+document.getElementById('descrição').innerHTML= descrição;
+
+</script>
 
 </html>
